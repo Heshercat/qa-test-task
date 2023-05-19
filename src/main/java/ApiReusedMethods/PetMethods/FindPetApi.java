@@ -17,9 +17,8 @@ public class FindPetApi extends ReusedMethods {
     public static Response getPetById(int petId) {
         Response response = RestAssured.given()
                 .pathParam("petId", petId)
-                .get(BASE_URL + "/pet/{petId}");
+                .get(BASE_URL + PET_BY_ID);
 
         return response;
     }
-
 }

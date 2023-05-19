@@ -5,18 +5,16 @@ import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 import static Core.ApiConfig.*;
 
-public class UpdatePetApi  extends ReusedMethods {
+public class UpdatePetApi extends ReusedMethods {
 
     public static Response updatePet(int petId, String petName, String petStatus,
-                                 int categoryId, String categoryName,
-                                 int tagId, String tagName) {
+                                     int categoryId, String categoryName,
+                                     int tagId, String tagName) {
 
         Map<String, Object> requestBody = new HashMap<>();
         requestBody.put("id", petId);

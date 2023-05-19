@@ -2,6 +2,7 @@ package App;
 
 import Core.Config;
 import com.microsoft.playwright.*;
+
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
@@ -38,7 +39,6 @@ public class CareersPage extends CommonPage {
     public final static String LOCATION_OPTION_LOCATOR = "#select2-filter-by-location-results > li";
     public final static String OPEN_POSITIONS_SECTION_LOCATOR = "xpath = //*[@id=\"career-position-list\"]/div/div";
     public static final String JOB_LIST_LOCATOR = "xpath = //*[@id=\"jobs-list\"]";
-
     public final static String APPLY_NOW_BUTTON_LOCATOR = "xpath = //*[@id=\"jobs-list\"]/div[1]/div/a";
 
 
@@ -167,8 +167,3 @@ public class CareersPage extends CommonPage {
         checkNewTabOpened(JOBS_LEVER_URL);
     }
 }
-
-
-
-
-

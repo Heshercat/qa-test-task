@@ -34,7 +34,7 @@ public class HomePage extends CommonPage {
                 .setTimeout(Double.parseDouble(Config.navigateTimeout)));
     }
 
-    public void checkHomePageRoute(){
+    public void checkHomePageRoute() {
 
         checkPageRoute(HOME_PAGE_DOM_ROUTER);
     }
@@ -59,8 +59,3 @@ public class HomePage extends CommonPage {
         click(ACCEPT_ALL_BUTTON_LOCATOR);
     }
 }
-
-
-
-
-

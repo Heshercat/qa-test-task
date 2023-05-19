@@ -6,7 +6,7 @@ import io.restassured.response.Response;
 
 import static Core.ApiConfig.*;
 
-public class DeletePetApi  extends ReusedMethods {
+public class DeletePetApi extends ReusedMethods {
 
     public static Response deletePetById(long petId) {
 
