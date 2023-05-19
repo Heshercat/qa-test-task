@@ -64,7 +64,6 @@ public class CareersPageTest extends RunConfigurations {
         careersPage.selectLocationByText("Istanbul, Turkey");
         careersPage.clickApplyNowButton();
         careersPage.checkJobsLeverOpened();
-
     }
 
 }

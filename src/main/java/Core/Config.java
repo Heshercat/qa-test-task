@@ -29,7 +29,7 @@ public class Config {
         }
     }
 
-    public static void customWait (Page page) {
+    public static void customWait(Page page) {
         page.waitForTimeout(Double.parseDouble(customWaitTimeout));
     }
 }

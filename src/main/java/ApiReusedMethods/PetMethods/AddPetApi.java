@@ -12,7 +12,6 @@ import static Core.ApiConfig.*;
 
 public class AddPetApi extends ReusedMethods {
 
-
     public static Response createPet(int petId, String petName, String petStatus,
                                      int categoryId, String categoryName,
                                      int tagId, String tagName) {

@@ -26,6 +26,7 @@ public class ReusedMethods {
     }
 
     private static final Map<Integer, String> tagMap = new HashMap<>();
+
     static {
         tagMap.put(1, "Red");
         tagMap.put(2, "Blue");
@@ -104,7 +105,7 @@ public class ReusedMethods {
         throw new IllegalStateException("No valid pet IDs found.");
     }
 
-    public static String getStringWithCurrentTime (String stringContext) {
+    public static String getStringWithCurrentTime(String stringContext) {
         Instant now = Instant.now();
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss").withZone(ZoneOffset.UTC);
         return stringContext + "-" + formatter.format(now);
@@ -139,11 +140,9 @@ public class ReusedMethods {
         for (int i = 0; i < itemCount; i++) {
             String itemStatus = jsonPath.getString("[" + i + "].status");
             if (itemStatus.equals(status)) {
-               return true;
+                return true;
             }
         }
         return false;
     }
-
-
 }
