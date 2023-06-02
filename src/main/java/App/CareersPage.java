@@ -121,8 +121,8 @@ public class CareersPage extends CommonPage {
         assertTrue(isSectionVisibleByLocator(OPEN_POSITIONS_SECTION_LOCATOR), "Section is not visible");
     }
 
-    //TO DO: Create separate method for each check so that the principle of unitary checks is preserved
-    //TO DO: Rework button
+    //TODO: Create separate method for each check so that the principle of unitary checks is preserved
+    //TODO: Rework button
     public boolean hasQualityAssuranceJobInIstanbul() {
         String jobDepartment = "Quality Assurance";
         String jobLocation = "Istanbul, Turkey";
@@ -156,7 +156,7 @@ public class CareersPage extends CommonPage {
         Config.customWait(page);
     }
 
-    //TO DO: finish and rework this method, currently it doesn't work in right way and takes the url from the previous page
+    //TODO: finish and rework this method, currently it doesn't work in right way and takes the url from the previous page
     public void checkNewTabOpened(String expectedUrl) {
         page.bringToFront();
         String currentUrl = page.url();

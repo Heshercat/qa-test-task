@@ -45,7 +45,7 @@ public class ReusedMethods {
         return random.nextInt(max - min + 1) + min;
     }
 
-    //TO DO: rework categories logic - create mapping with ids like for tags
+    //TODO: rework categories logic - create mapping with ids like for tags
     public static String getRandomCategory() {
         List<String> categories = new ArrayList<>(animalCategories.keySet());
         int categoryIndex = random.nextInt(categories.size());
@@ -73,7 +73,7 @@ public class ReusedMethods {
         return tagMap.get(tagId);
     }
 
-    //TO DO: rework method to gather all petIds for each status and add it to common list
+    //TODO: rework method to gather all petIds for each status and add it to common list
     public static List<Object> extractValidPetIds() {
         List<Object> idList = new ArrayList<>();
         Response response = findPetsByStatus(getRandomPetStatus());

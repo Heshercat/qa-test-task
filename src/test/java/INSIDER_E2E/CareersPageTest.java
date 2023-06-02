@@ -23,7 +23,7 @@ public class CareersPageTest extends RunConfigurations {
         homePage.clickCareersOption();
     }
 
-    //TO DO: move out each check in a separate test so that the principle of unitary checks is preserved
+    //TODO: move out each check in a separate test so that the principle of unitary checks is preserved
     @Test
     @Order(1)
     @DisplayName("Check that Careers page, its Locations, Teams and Life at Insider blocks are opened")
@@ -38,7 +38,7 @@ public class CareersPageTest extends RunConfigurations {
         careersPage.checkLifeAtInsiderSectionVisible();
     }
 
-    //TO DO: move out each check in a separate test so that the principle of unitary checks is preserved
+    //TODO: move out each check in a separate test so that the principle of unitary checks is preserved
     //Filter by department must be prefilled by default with current department value
     @Test
     @Order(2)

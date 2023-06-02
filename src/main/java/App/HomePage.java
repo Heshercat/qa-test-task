@@ -44,7 +44,7 @@ public class HomePage extends CommonPage {
     }
 
     //Header methods
-    //TO DO: Move header module to separate file, if/when new tests will be written for other features of this module
+    //TODO: Move header module to separate file, if/when new tests will be written for other features of this module
     public void clickMoreDropDown() {
         click(MORE_DROPDOWN_LOCATOR);
         Config.customWait(page);
